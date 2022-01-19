@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Outlet, useLocation, useNavigate, useParams} from "react-router-dom";
+import {useLocation, useNavigate, useParams} from "react-router-dom";
 import {userService} from "../../services/user-service";
 
 const SingleUserPage = () => {
@@ -13,13 +13,11 @@ const SingleUserPage = () => {
             return
         }
         userService.getUserById(id).then(value=> setUser(value))
-
     }, [])
+
     const toPrevious = () => {
       navigate('/users')
-
     }
-
     return (
         <div>
             <button onClick={toPrevious}>Choose other user</button>
@@ -35,11 +33,7 @@ const SingleUserPage = () => {
                      <div>{user.website}</div>
                  </div>
                 )}
-            <div><Outlet/></div>
-
-
         </div>
-
     );
 };
 
