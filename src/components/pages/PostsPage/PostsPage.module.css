@@ -1,0 +1,10 @@
+.postsWrap{
+    display: flex;
+}
+.post{
+    max-width: 500px;
+}
+.postsFull{
+    width: 650px;
+    background-color: gray;
+}
