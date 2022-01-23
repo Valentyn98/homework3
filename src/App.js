@@ -3,13 +3,13 @@ import './App.css';
 import {Route, Routes, Link} from "react-router-dom";
 import User from "./User/User";
 import UsersPage from "./User/UsersPage";
-import SingleUser from "./User/SingleUser";
 import UserPost from "./User/UserPost";
 import PostsPage from "./Post/PostsPage";
 import SinglePost from "./Post/SinglePost";
 import PostComm from "./Post/PostComm";
 import Alboms from "./User/Alboms";
 import Photo from "./User/Photo";
+import SingleUserPage from "./User/SingleUser";
 function App() {
     return (
         <div className="App">
@@ -19,14 +19,14 @@ function App() {
                     <Route path={':id/albums'} element={<Alboms/>}>
                         <Route path={':albumId/photos'} element={<Photo/>}/>
                     </Route>
-                    <Route path={':id'} element={<SingleUser/>}>
-                        <Route path={'posts'} element={<UserPost/>}/>
+                    <Route path={':id'} element={<SingleUserPage/>}>//
+                        <Route path={'posts'} element={<UserPost/>}/>//
 
                     </Route>
                 </Route>
-                <Route path={'posts'} element={<PostsPage/>}>
-                    <Route path={':id'} element={<SinglePost/>}>
-                        <Route path={'comments'} element={<PostComm/>}/>
+                <Route path={'posts'} element={<PostsPage/>}>//
+                    <Route path={':id'} element={<SinglePost/>}>//
+                        <Route path={'comments'} element={<PostComm/>}/>//
                     </Route>
                 </Route>
             </Routes>
