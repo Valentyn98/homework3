@@ -1,7 +1,5 @@
 import Layout from "./Layout/Layout";
-import './App.css';
 import {Route, Routes, Link} from "react-router-dom";
-import User from "./User/User";
 import UsersPage from "./User/UsersPage";
 import UserPost from "./User/UserPost";
 import PostsPage from "./Post/PostsPage";

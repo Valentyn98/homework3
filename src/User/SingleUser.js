@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link, Outlet, useLocation, useNavigate, useParams} from "react-router-dom";
 
 import {userServices} from "../services/user.services";
-
+import css from './singleuser.module.css'
 const SingleUserPage = () => {
     const {id} = useParams()
     const [user, setUser] = useState(null)
@@ -19,7 +19,7 @@ const SingleUserPage = () => {
         <div>
             {
                 user && (
-                    <div>
+                    <div className={css.singus}>
                         <div>{user.id} {user.name}</div>
                         <div>{user.username}</div>
                         <div>{user.email}</div>

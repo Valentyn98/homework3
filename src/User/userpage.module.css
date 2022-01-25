@@ -1,0 +1,14 @@
+.users{
+    background-color: black;
+    color: deepskyblue;
+    display: flex;
+    justify-content: center;
+
+}
+h1{
+    font-size: 30px;
+    font-weight:bold;
+    color:deepskyblue;
+    text-transform:uppercase;
+    text-decoration:none;
+}

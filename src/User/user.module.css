@@ -1,0 +1,29 @@
+.users{
+
+  text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    width: 450px;
+}
+.centruser{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:bold;
+    color:deepskyblue;
+
+}
+button{
+    font-size: 12px;
+    font-weight:bold;
+    color:white;
+    background-color: deepskyblue;
+    text-decoration: none;
+    border: 15px deepskyblue solid;
+    cursor: pointer;
+    text-transform:uppercase;
+}
